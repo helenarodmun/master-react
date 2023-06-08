@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import MyComponent from './MyComponent';
+import SecondComponent from './SecondComponent';
 
 function App() {
   return (
@@ -8,15 +10,17 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Bienvenido a la página de Helena
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        </p>  
+        
+      {/* Cargar primer componente */}
+      <div className='components'>
+      <hr/>
+      <SecondComponent/>
+      <hr/>
+      <MyComponent/>
+      </div>
+     
+     
       </header>
     </div>
   );
